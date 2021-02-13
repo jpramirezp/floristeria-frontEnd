@@ -1,10 +1,11 @@
 
 function MostrarContenido(){
 
-    let num1:number=0
-    let num2:number=0
-    let operacion:number=num1+num2
-    alert('HOLA es un cambio por Cristopher')  
+    let num1 =  <HTMLInputElement>document.getElementById('Num1');
+    let num2 =  <HTMLInputElement>document.getElementById('Num2');
+   
+    let operacion:any= parseInt(num1.value) + parseInt(num2.value)  
+
     alert('El Resultado es:' + operacion)
 }
     
