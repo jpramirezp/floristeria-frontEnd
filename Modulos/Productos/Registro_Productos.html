@@ -138,17 +138,24 @@
         <h1 class="h3 mb-3 font-weight-normal text-center">Registro de Productos</h1>
         
         <!--Etiquetas de formulario-->
-        <label for="inputNombre" class="sr-only">Nombre</label>
-        <input type="Nombre" id="inputNombre" class="form-control" placeholder="Nombre" required autofocus>
-
         <label for="inputID" class="sr-only">ID</label>
-        <input type="ID" id="inputID" class="form-control" placeholder="ID" required>
+        <input type="text" id="inputID" class="form-control" placeholder="ID" required readonly>
+
+        <label for="inputNombre" class="sr-only">Nombre</label>
+        <input type="text" id="inputNombre" class="form-control" placeholder="Nombre" required autofocus>
+       
+        <label for="inputTipo" class="sr-only">Tipo</label>
+        <input type="text" id="inputTipo" class="form-control" placeholder="Tipo" required>
 
         <label for="inputCantidad" class="sr-only">Cantidad</label>
-        <input type="Cantidad" id="inputCantidad" class="form-control" placeholder="Cantidad" required>
+        <input type="number" id="inputCantidad" class="form-control" placeholder="Cantidad" required>
+       
 
-        <label for="inputTipo" class="sr-only">Tipo</label>
-        <input type="Tipo" id="inputTipo" class="form-control" placeholder="Tipo" required>
+        <label for="inputTipo" class="sr-only">Descripcion</label>
+        <input type="text" id="inputDescripcion" class="form-control" placeholder="Descripcion" required>
+
+        <label for="inputTipo" class="sr-only">URL Imagen</label>
+        <input type="text" id="inputURL" class="form-control" placeholder="URL Imagen" required>
         
         <!--
         <div class="checkbox mb-3">
@@ -162,7 +169,7 @@
         <div class="row">
           <div class="col-md">
             <!--Boton Registrar-->
-            <button class="btn btn-lg btn-primary btn-block" type="submit">Registrar</button>
+            <button class="btn btn-lg btn-primary btn-block" type="button" onclick="producto.postProducto()">Registrar</button>
             <!--<p class="mt-5 mb-3 text-muted">&copy; 2021</p>--> 
             
             <!--Boton Eliminar-->
@@ -183,6 +190,7 @@
 <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../../dist/Modulos/Productos/Productos.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
     <script src="../../assets/js/popper.min.js"></script>
