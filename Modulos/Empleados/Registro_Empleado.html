@@ -69,7 +69,9 @@
                     </a>
                   </li>
                 </ul>
-    
+                
+                <!--Código de bontones inferiores laterales-->
+                <!--
                 <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
                   <span>Saved reports</span>
                   <a class="d-flex align-items-center text-muted" href="#">
@@ -102,6 +104,7 @@
                     </a>
                   </li>
                 </ul>
+                -->
               </div>
             </nav>
 
@@ -156,7 +159,7 @@
         <input type="Direccion" id="inputDireccion" class="form-control" placeholder="Dirección" required>
         -->
         <form class="form-signin">
-          <img class="mb-2 center-block" src="../../../assets/png/person.svg" alt="" width="72" height="72">
+          <img class="mb-2 center-block" src="../../../assets/png/man.svg" alt="" width="72" height="72">
           <h1 class="h3 mb-3 font-weight-normal text-center">Registro de Empleado</h1>
 
         <!--Grid para label en dos columnas-->
@@ -177,7 +180,7 @@
               <input type="FecSalida" id="inputFecSalida" class="form-control" placeholder="Fecha de Salida" required>
       
               <label for="inputDireccion" class="sr-only">Direccion</label>
-              <input type="Direccion" id="inputDireccion" class="form-control" placeholder="Dirección" required>
+              <textarea type="Direccion" id="inputDireccion" rows="3" class="form-control" placeholder="Dirección" required></textarea>
             </div>
             <div class="col-md">
               <label for="inputNombre" class="sr-only">Nombre</label>
@@ -194,6 +197,7 @@
 
               <label for="inputArea" class="sr-only">Area</label>
               <input type="Area" id="inputArea" class="form-control" placeholder="Área" required>
+
             </div>
           </div>
         </div>
@@ -203,20 +207,20 @@
           <div class="row">
             <div class="col-md">
               <!--Boton Registrar-->
-              <button class="btn btn-lg btn-primary btn-block" type="submit">Registrar</button>
+              <button class="btn btn-sm btn-primary btn-block" type="submit">Registrar</button>
               <!--<p class="mt-5 mb-3 text-muted">&copy; 2021</p>--> 
               
               <!--Boton Eliminar-->
-              <button class="btn btn-lg btn-primary btn-block" type="submit">Eliminar</button>
+              <button class="btn btn-sm btn-primary btn-block" type="submit">Eliminar</button>
               <!--<p class="mt-5 mb-3 text-muted">&copy; 2021</p>--> 
             </div>
             <div class="col-md">
              <!--Boton Buscar-->
-              <button class="btn btn-lg btn-primary btn-block" type="submit">Buscar</button>
+              <button class="btn btn-sm btn-primary btn-block" type="submit">Buscar</button>
               <!--<p class="mt-5 mb-3 text-muted">&copy; 2021</p>--> 
 
               <!--Boton Modificar-->
-              <button class="btn btn-lg btn-primary btn-block" type="submit">Modificar</button>
+              <button class="btn btn-sm btn-primary btn-block" type="submit">Modificar</button>
               <!--<p class="mt-5 mb-3 text-muted">&copy; 2021</p>-->  <!--Boton Registrar-->
             </div>
       </form>
