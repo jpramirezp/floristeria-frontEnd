@@ -167,35 +167,38 @@
       <img class="mb-2 center-block" src="../../../assets/png/person.svg" alt="" width="72" height="72">
       <h1 class="h3 mb-3 font-weight-normal text-center">Registro de Cliente</h1>
 
+      <label for="inputID" class="sr-only">ID</label>
+      <input type="text" id="inputID" class="form-control" placeholder="ID" required disabled>
+      
       <label for="inputNombre" class="sr-only">Nombre</label>
-      <input type="Nombre" id="inputNombre" class="form-control" placeholder="Nombre" required autofocus>
+      <input type="text" id="inputNombre" class="form-control" placeholder="Nombre" required autofocus>
 
       <label for="inputApellido" class="sr-only">Apellido</label>
-      <input type="Apellido" id="inputApellido" class="form-control" placeholder="Apellido" required>
+      <input type="text" id="inputApellido" class="form-control" placeholder="Apellido" required>
       
       <label for="inputIdentidad" class="sr-only">Identidad</label>
-      <input type="Identidad" id="inputIdentidad" class="form-control" placeholder="Identidad" required>
+      <input type="text" id="inputIdentidad" class="form-control" placeholder="Identidad" required>
 
       <label for="inputTelefono" class="sr-only">Telefono</label>
-      <input type="Telefono" id="inputTelefono" class="form-control" placeholder="Teléfono" required>
+      <input type="text" id="inputTelefono" class="form-control" placeholder="Teléfono" required>
       
       <label for="inputEmail" class="sr-only">Email</label>
-      <input type="Email" id="inputEmail" class="form-control" placeholder="Email" required>
+      <input type="text" id="inputEmail" class="form-control" placeholder="Email" required>
 
       <label for="inputDireccion" class="sr-only">Direccion</label>
-      <textarea type="Direccion" id="inputDireccion" rows="3" class="form-control" placeholder="Dirección" required></textarea>
+      <textarea type="text" id="inputDireccion" rows="3" class="form-control" placeholder="Dirección" required></textarea>
 
       <div class="pb-3 mb-3 border-bottom"></div>
 
       <!--Boton Registrar-->
-      <button class="btn btn-sm btn-primary btn-success " type="submit">Registrar
+      <button class="btn btn-sm btn-primary btn-success " onclick="clientes.postClientes()">Registrar
         <span data-feather="check"></span>
       </button>
 
       <!--<p class="mt-5 mb-3 text-muted">&copy; 2021</p>--> 
       
       <!--Boton Eliminar-->
-      <button class="btn btn-sm btn-primary btn-danger " type="submit">Eliminar
+      <button class="btn btn-sm btn-primary btn-danger " onclick="clientes.deleteClientes()">Eliminar
         <span data-feather="trash-2"></span>
       </button>
       <!--<p class="mt-5 mb-3 text-muted">&copy; 2021</p>--> 
@@ -207,14 +210,14 @@
       <!--<p class="mt-5 mb-3 text-muted">&copy; 2021</p>--> 
 
       <!--Boton Modificar-->
-      <button class="btn btn-sm btn-primary btn-warning " type="submit">Modificar
+      <button class="btn btn-sm btn-primary btn-warning " onclick="clientes.putClientes()">Modificar
         <span data-feather="edit"></span>
       </button>
       <!--<p class="mt-5 mb-3 text-muted">&copy; 2021</p>-->
 
     </div>
     <div class="col-6 text-center">
-      <table class="table table-striped table-hover" style="margin-top: 15px;">
+      <table id="cliTable" class="table table-striped table-hover" style="margin-top: 15px;">
         <h3 style="margin-top: 80px;">Tabla de Registros</h3>
         <thead>
           <tr>
@@ -222,6 +225,8 @@
             <th scope="col">First</th>
             <th scope="col">Last</th>
             <th scope="col">Handle</th>
+            <th scope="col">1</th>
+            <th scope="col">2</th>
           </tr>
         </thead>
         <tbody>
@@ -265,6 +270,8 @@
     <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
     <script src="../../assets/js/popper.min.js"></script>
     <script src="../../assets/js/bootstrap.min.js"></script>
+
+    <script src="../../dist/Modulos/Cliente/clientes.js"></script>
 
 <!-- Icons -->
 <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
