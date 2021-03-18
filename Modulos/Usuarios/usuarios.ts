@@ -33,23 +33,7 @@ class Usuarios {
       pUser_Usuario: this.pUser_Usuario.value,
       pClave_Usuario: this.pClave_Usuario.value
     }
-    //Aquí código de sweetalert2 para confirmar
-    // Swal.fire({
-    //     title: '¿Esta seguro de querer salvar usuario?',
-    //     showDenyButton: true,
-    //     showCancelButton: true,
-    //     confirmButtonText: `Guardar`,
-    //     denyButtonText: `No guardar`,
-    //   }).then((result:any) => {
-    //     /* Read more about isConfirmed, isDenied below */
-    //     if (result.isConfirmed) {
-    //       Swal.fire('¡Guardado!', '', 'success')
-    //     } else if (result.isDenied) {
-    //       Swal.fire('¡El usuario no ha sido guardado!', '', 'info')
-    //     }
-    //   })
-
-
+    
     //Metodo para llamar APIS, se le envia el body en formato JSON
     fetch(URL, {
       method: 'POST',
@@ -77,33 +61,6 @@ class Usuarios {
     //alert(`EL USUARIO ES AHORA: ${this.pNom_Emp.value} y la Cantidad es ${this.pCant_Prod.value}`)
     let URL = "http://localhost:3500/api/usuarios/getUsuarios"
 
-    //Se arma el Objeto que se enviara en el BODY
-    // const datos = {
-    //     pNom_Usuario: this.pNom_Usuario.value,
-    //     pApe_Usuario: this.pApe_Usuario.value,
-    //     pNoID_Usuario: this.pNoID_Usuario.value,
-    //     pTipo_Usuario: this.pTipo_Usuario.value,
-    //     pArea_Usuario: this.pApe_Usuario.value,
-    //     pUser_Usuario: this.pUser_Usuario.value,
-    //     pClave_Usuario: this.pClave_Usuario.value
-    // }
-    //Aquí código de sweetalert2 para confirmar
-    // Swal.fire({
-    //     title: '¿Esta seguro de querer salvar usuario?',
-    //     showDenyButton: true,
-    //     showCancelButton: true,
-    //     confirmButtonText: `Guardar`,
-    //     denyButtonText: `No guardar`,
-    //   }).then((result:any) => {
-    //     /* Read more about isConfirmed, isDenied below */
-    //     if (result.isConfirmed) {
-    //       Swal.fire('¡Guardado!', '', 'success')
-    //     } else if (result.isDenied) {
-    //       Swal.fire('¡El usuario no ha sido guardado!', '', 'info')
-    //     }
-    //   })
-
-
     //Metodo para llamar APIS, se le envia el body en formato JSON
     fetch(URL, {
       method: 'GET',
@@ -126,10 +83,10 @@ class Usuarios {
           let cellLast = newRow.insertCell(2);
           let cellHandle = newRow.insertCell(3);
 
-          cellId.innerHTML = usuario.id.toString()
-          cellFirst.innerHTML = usuario.Nom_Usuario
-          cellLast.innerHTML = usuario.Ape_Usuario
-          cellHandle.innerHTML = usuario.User_Usuario
+          // cellId.innerHTML = usuario.id.toString()
+          // cellFirst.innerHTML = usuario.Nom_Usuario
+          // cellLast.innerHTML = usuario.Ape_Usuario
+          // cellHandle.innerHTML = usuario.User_Usuario
         })
 
         let header = this.userTable.createTHead();

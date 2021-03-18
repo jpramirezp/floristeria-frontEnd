@@ -1,10 +1,10 @@
 interface IProductos{
-    id?:number,
+    id?:string,
     Nom_Prod?:string,
     Tipo_Prod?:string,
-    Cant_Prod?:number,
+    Cant_Prod?:string,
     NoID_Prod?:string,
     Descripcion?:string,
     URL_Imagen?:string,
-    Precio?:number
+    Precio?:string
 }
