@@ -8,99 +8,100 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Registro Productos</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="../../assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../../assets/css/prueba-labels.css" rel="stylesheet">    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+  <!-- Bootstrap core CSS -->
+  <link href="../../assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../../assets/css/prueba-labels.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" />
 
-    <!-- Custom styles for this template -->
-    <link href="../../assets/css/dashboard.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="../../assets/css/dashboard.css" rel="stylesheet">
 
 
 </head>
 
 <body>
-    <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
-        <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="http://127.0.0.1:8887/index.html">Floristeria Tulipanes</a>
-        <input class="form-control form-control-dark w-100" type="text" placeholder="Buscar" aria-label="Search">
-        <ul class="navbar-nav px-3">
-          <li class="nav-item text-nowrap">
-            <a class="nav-link" href="#">Salir</a>
-          </li>
-        </ul>
-      </nav>
+  <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
+    <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="http://127.0.0.1:8887/index.html">Floristeria Tulipanes</a>
+    <input class="form-control form-control-dark w-100" type="text" placeholder="Buscar" aria-label="Search">
+    <ul class="navbar-nav px-3">
+      <li class="nav-item text-nowrap">
+        <a class="nav-link" href="../../index.html">Salir</a>
+      </li>
+    </ul>
+  </nav>
 
 
-      <div class="container-fluid">
-        <div class="row">
-          <nav class="col-md-2 d-none d-md-block bg-light sidebar">
-            <div class="sidebar-sticky">
-              <ul class="nav flex-column">
-                <li class="nav-item">
-                  <div class="text-center">
-                    <img src="../../assets/png/user.svg" class="circle" alt="" width="90" height="90"
-                    style="margin-top: 20px; margin-bottom: 20px;">
-                  </div>
-                </li>
-                <li class="nav-item">
-                  <a style="text-align: center;">
-                    <p class="lead">Tipo de Usuario</p>
-                  </a>
-                </li>
-                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center
+  <div class="container-fluid">
+    <div class="row">
+      <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+        <div class="sidebar-sticky">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <div class="text-center">
+                <img src="../../assets/png/user.svg" class="circle" alt="" width="90" height="90"
+                  style="margin-top: 20px; margin-bottom: 20px;">
+              </div>
+            </li>
+            <li class="nav-item" style="text-align: center;">
+              <label id="lblTipoUsuario" class="lead">Usuario</label>
+              </a>
+            </li>
+            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center
                   pb-2 mb-3 border-bottom">
-                </div>
-                <li class="nav-item">
-                  <a class="nav-link active" href="http://127.0.0.1:8887/Modulos/dashboard.html">
-                    <span data-feather="home"></span>
-                    Inicio <span class="sr-only">(current)</span>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="http://127.0.0.1:8887/Modulos/Proveedores/Registro_Proveedores.html">
-                    <span data-feather="file"></span>
-                    Proveedores
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="http://127.0.0.1:8887/Modulos/Productos/Registro_Productos.html">
-                    <span data-feather="truck"></span>
-                    Catálogo
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="http://127.0.0.1:8887/Modulos/Cliente/Registro_Clientes.html">
-                    <span data-feather="users"></span>
-                    Clientes
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="http://127.0.0.1:8887/Modulos/Usuarios/Registro_Usuarios.html">
-                    <span data-feather="users"></span>
-                    Usuarios
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="http://127.0.0.1:8887/Modulos/Empleados/Registro_Empleado.html">
-                    <span data-feather="users"></span>
-                    Empleados
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="http://127.0.0.1:8887/Modulos/Reportes/Reportes.html">
-                    <span data-feather="file"></span>
-                    Reportes
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">
-                    <span data-feather="layers"></span>
-                    Utilidades
-                  </a>
-                </li>
-              </ul>
-              <!--Elementos ocultos de barra lateral 1-->
-              <!--
+            </div>
+            <li class="nav-item">
+              <a class="nav-link active" href="http://127.0.0.1:8887/Modulos/dashboard.html">
+                <span data-feather="home"></span>
+                Inicio <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://127.0.0.1:8887/Modulos/Proveedores/Registro_Proveedores.html">
+                <span data-feather="file"></span>
+                Proveedores
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://127.0.0.1:8887/Modulos/Productos/Registro_Productos.html">
+                <span data-feather="truck"></span>
+                Catálogo
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://127.0.0.1:8887/Modulos/Cliente/Registro_Clientes.html">
+                <span data-feather="users"></span>
+                Clientes
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://127.0.0.1:8887/Modulos/Usuarios/Registro_Usuarios.html">
+                <span data-feather="users"></span>
+                Usuarios
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://127.0.0.1:8887/Modulos/Empleados/Registro_Empleado.html">
+                <span data-feather="users"></span>
+                Empleados
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://127.0.0.1:8887/Modulos/Reportes/Reportes.html">
+                <span data-feather="file"></span>
+                Reportes
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span data-feather="layers"></span>
+                Utilidades
+              </a>
+            </li>
+          </ul>
+          <!--Elementos ocultos de barra lateral 1-->
+          <!--
               <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
                 <span>Tienda</span>
                 <a class="d-flex align-items-center text-muted" href="#">
@@ -108,73 +109,78 @@
                 </a>
               </h6>
               -->
-              <ul class="nav flex-column mb-2">
-               
-              </ul>
-            </div>
-          </nav>
-          <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
-            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 ">              
-            </div>
-  
+          <ul class="nav flex-column mb-2">
+
+          </ul>
+        </div>
+      </nav>
+      <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
+        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 ">
+        </div>
+
 </body>
+
 </html>
 <!--Tablas de ingreso-->
 
 <form class="form-signin">
-  
+
   <div class="form-row">
     <div class="col-5 mr-5 text-center">
-  
+
       <img class="mb-2 center-block" src="../../../assets/png/box.svg" alt="" width="72" height="72">
       <h1 class="h3 mb-3 font-weight-normal text-center">Registro de Productos</h1>
-      
+
       <!--Etiquetas de formulario-->
       <label for="inputID" class="sr-only">ID</label>
       <input type="text" id="inputID" class="form-control" placeholder="ID" required readonly>
-    
+
       <label for="inputNombre" class="sr-only">Nombre</label>
       <input type="text" id="inputNombre" class="form-control" placeholder="Nombre" required autofocus>
-     
+
       <label for="inputTipo" class="sr-only">Tipo</label>
       <input type="text" id="inputTipo" class="form-control" placeholder="Tipo" required>
-    
+
       <label for="inputCantidad" class="sr-only">Cantidad</label>
       <input type="number" id="inputCantidad" class="form-control" placeholder="Cantidad" required>
-     
+
       <label for="inputTipo" class="sr-only">Precio de venta</label>
       <input type="number" id="inputPrecio" class="form-control" placeholder="Precio de venta" required>
-    
+
       <label for="inputDescripcion" class="sr-only">Descripcion</label>
-      <textarea type="Descripcion" id="inputDescripcion" rows="3" class="form-control" placeholder="Descripción" required></textarea>
-    
+      <textarea type="Descripcion" id="inputDescripcion" rows="3" class="form-control" placeholder="Descripción"
+        required></textarea>
+
       <label for="inputTipo" class="sr-only">URL Imagen</label>
       <input type="text" id="inputURL" class="form-control" placeholder="URL Imagen" required>
 
-      
+
 
       <div class="pb-3 mb-3 border-bottom"></div>
 
 
-       <!--Boton Nuevo-->
-       <button class="btn btn-sm btn-primary btn-primary " type="button" onclick="producto.limpiar()">Nuevo
+      <!--Boton Nuevo-->
+      <button class="btn btn-sm btn-primary btn-primary " type="button" onclick="producto.limpiar()">Nuevo
         <span data-feather="plus"></span>
       </button>
 
       <!--Boton Registrar-->
-      <button id="btnRegistrar" class="btn btn-sm btn-primary btn-success " type="button" onclick="producto.postProducto(1)">Registrar
+      <button id="btnRegistrar" class="btn btn-sm btn-primary btn-success " type="button"
+        onclick="producto.postProducto(1)">Registrar
         <span data-feather="check"></span>
       </button>
 
-     
+
       <!--Boton Eliminar-->
-      <button id="btnEliminar" disabled class="btn btn-sm btn-primary btn-danger " type="button" onclick="producto.deleteProducto()">Eliminar
+      <button id="btnEliminar" disabled class="btn btn-sm btn-primary btn-danger " type="button"
+        onclick="producto.deleteProducto()">Eliminar
         <span data-feather="trash-2"></span>
       </button>
-      <!--<p class="mt-5 mb-3 text-muted">&copy; 2021</p>--> 
-     
+      <!--<p class="mt-5 mb-3 text-muted">&copy; 2021</p>-->
+
       <!--Boton Modificar-->
-      <button id="btnModificar" disabled class="btn btn-sm btn-primary btn-warning " onclick="producto.postProducto(2)" type="button">Modificar
+      <button id="btnModificar" disabled class="btn btn-sm btn-primary btn-warning " onclick="producto.postProducto(2)"
+        type="button">Modificar
         <span data-feather="edit"></span>
       </button>
       <!--<p class="mt-5 mb-3 text-muted">&copy; 2021</p>-->
@@ -191,7 +197,7 @@
             <th scope="col">Precio</th>
           </tr>
         </thead>
-        <tbody id="bodyListaProductos">          
+        <tbody id="bodyListaProductos">
         </tbody>
       </table>
     </div>
@@ -200,22 +206,25 @@
 </form>
 
 <!--Barra pie de pagina-->
-<main class="container"> 
+<main class="container">
 </main>
 <nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark">
   <div class="container-fluid">
-    <a class="nav-link disabled"  tabindex="-1" aria-disabled="true">Derechos Reservados © Floristeria Tulipanes: Usuario | Fecha | Hora</a>
+    <a class="nav-link disabled" tabindex="-1" aria-disabled="true">Derechos Reservados © Floristeria Tulipanes: Usuario
+      | Fecha | Hora</a>
   </div>
 </nav>
 
-  <!--SCRIPTS-->
-    <script src="../../dist/Modulos/Productos/Productos.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-    <script src="../../assets/js/popper.min.js"></script>
-    <script src="../../assets/js/bootstrap.min.js"></script>
-    <!-- SWEET ALERT Notificaciones -->
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<!--SCRIPTS-->
+<script src="../../dist/Modulos/Utilidades/utilidades.js"></script>
+<script src="../../dist/Modulos/Productos/Productos.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+<script src="../../assets/js/popper.min.js"></script>
+<script src="../../assets/js/bootstrap.min.js"></script>
+<!-- SWEET ALERT Notificaciones -->
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <!-- Icons -->
 <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
 <script>

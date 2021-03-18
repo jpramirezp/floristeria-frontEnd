@@ -3,11 +3,15 @@ class Index {
 
     Productos:IProductos[]=[];
     divProductos=<HTMLDivElement>document.getElementById('divProductos');
+    Carrito:any[]=[]
 
     constructor(){        
     }
 
     getProductos(){
+      //limpia el local storage de logins previos  
+      localStorage.removeItem('userLogin');
+                
         let URL = "http://localhost:3500/api/productos/getProductos"
         
         //Metodo para llamar APIS, se le envia el body en formato JSON
@@ -29,9 +33,8 @@ class Index {
                       <div class="featured__item__pic set-bg" data-setbg="">
                       <img src="${producto.URL_Imagen}">
                         <ul class="featured__item__pic__hover">
-                          <li><a href="#"><i class="fa fa-heart"></i></a></li>
-                          <li><a href="#"><i class="fa fa-retweet"></i></a></li>
-                          <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                          <li><a href="#"><i class="fa fa-heart"></i></a></li>                          
+                          <li><a onclick="index.agregarItem(${producto.id})"><i class="fa fa-shopping-cart"></i></a></li>
                         </ul>
                       </div>
                       <div class="featured__item__text">
@@ -42,18 +45,24 @@ class Index {
                   </div>
                     `                    
                 })
-                
+            });
+    };
 
+    agregarItem(id:any){
+    
+      //si existe el carrito, continua agregando items
+      if (localStorage.getItem('arrayCarrito')){
+        this.Carrito=JSON.parse(String(localStorage.getItem('arrayCarrito')))
+      }
 
-
-               
-            })
-
+      //obtiene un solo item y luego lo ingresa al array principal
+      let CarritoItem = this.Productos.filter(producto => producto.id==id)[0]
+      this.Carrito.push(CarritoItem)
+      
+      //setea el array como como tipo string
+      localStorage.setItem('arrayCarrito',JSON.stringify(this.Carrito))
 
     }
-
-
-
 
 }
 
