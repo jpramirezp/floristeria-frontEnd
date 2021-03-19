@@ -47,38 +47,19 @@
           <h4 class="mb-3">Dirección de Envio</h4>
           <form class="needs-validation" novalidate>
             <div class="row">
-              <div class="col-md-6 mb-3">
-                <label for="firstName">Nombres</label>
-                <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+              <div class="col-md-12 mb-3">
+                <label for="firstName">Nombres y Apellidos</label>
+                <input id="txtNombre" type="text" class="form-control" placeholder="" value="" required>
                 <div class="invalid-feedback">
                   Se requiere un nombre válido.
                 </div>
-              </div>
-              <div class="col-md-6 mb-3">
-                <label for="lastName">Apellidos</label>
-                <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
-                <div class="invalid-feedback">
-                  Se requiere un nombre válido.
-                </div>
-              </div>
+              </div>             
             </div>
-
-            <div class="mb-3">
-              <label for="username">Nombre de usuario</label>
-              <div class="input-group">
-                <div class="input-group-prepend">
-                  <span class="input-group-text">@</span>
-                </div>
-                <input type="text" class="form-control" id="username" placeholder="Nombre de usuario" required>
-                <div class="invalid-feedback" style="width: 100%;">
-                  Se requiere su nombre de usuario.
-                </div>
-              </div>
-            </div>
+          
 
             <div class="mb-3">
               <label for="email">Email <span class="text-muted">(Opcional)</span></label>
-              <input type="email" class="form-control" id="email" placeholder="tu@correo.com">
+              <input id="txtEmail" type="email" class="form-control" placeholder="tu@correo.com">
               <div class="invalid-feedback">
                 Ingrese una dirección de correo electrónico válida para recibir actualizaciones de envío.
               </div>
@@ -86,16 +67,12 @@
 
             <div class="mb-3">
               <label for="address">Dirección</label>
-              <input type="text" class="form-control" id="address" placeholder="1234 Comayaguela" required>
+              <input id="txtDireccion" type="text" class="form-control" placeholder="1234 Comayaguela" required>
               <div class="invalid-feedback">
                 Por favor introduzca su direccion de envio.
               </div>
             </div>
-
-            <div class="mb-3">
-              <label for="address2">Dirección 2 <span class="text-muted">(Opcional)</span></label>
-              <input type="text" class="form-control" id="address2" placeholder="Colonia o Barrio">
-            </div>
+           
 
             <div class="row">
               <div class="col-md-5 mb-3">
@@ -142,11 +119,11 @@
             <div class="d-block my-3">
               <div class="custom-control custom-radio">
                 <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked required>
-                <label class="custom-control-label" for="credit">Tarjeta de Crédito</label>
+                <label class="custom-control-label" for="credit">Efectivo</label>
               </div>
               <div class="custom-control custom-radio">
                 <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required>
-                <label class="custom-control-label" for="debit">Tarjeta de Débito</label>
+                <label class="custom-control-label" for="debit">Tarjeta de Credito</label>
               </div>
               <div class="custom-control custom-radio">
                 <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>
@@ -187,7 +164,7 @@
               </div>
             </div>
             <hr class="mb-4">
-            <button class="btn btn-primary btn-lg btn-block" type="submit">Continuar a la compra</button>
+            <button class="btn btn-primary btn-lg btn-block" type="button" onclick="carrito.postFactura()">COMPRAR</button>
           </form>
         </div>
       </div>

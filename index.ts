@@ -62,6 +62,9 @@ class Index {
       //setea el array como como tipo string
       localStorage.setItem('arrayCarrito',JSON.stringify(this.Carrito))
 
+
+      alert('Producto agregado al Carrito !!')
+
     }
 
 }
